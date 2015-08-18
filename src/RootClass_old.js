@@ -1,8 +1,3 @@
-/**
- * This is a utility class that makes creating class structures with extension easy.
- * Class supports module registration in node, amd and lack of either
- * See example implementation below
- */
 (function(){
 	// Create local var for this
 	var window		= this;
