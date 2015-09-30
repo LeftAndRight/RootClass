@@ -20,10 +20,30 @@ module.exports = function(grunt) {
 					done();
 				}
 			}
+		},
+
+
+		karma : {
+			unit : {
+				options :{
+					// Build the list of files from the fileRegister and add some test files
+					files: [
+						"dist/rootclass.js",
+						"test/rootclass-test.js"
+					],
+					basePath	: "",
+					frameworks	: ["jasmine"],
+					reporters	: ["spec"],
+					logLevel	: "INFO",
+					autoWatch	: true,
+					browsers	: ["PhantomJS"],
+					singleRun	: true
+				}
+			}
 		}
 	});
 
-	grunt.loadNpmTasks("grunt-file-creator");
+	require("load-grunt-tasks")(grunt);
 
-	grunt.registerTask("default", ["file-creator"]);
+	grunt.registerTask("default", ["file-creator", "karma"]);
 };

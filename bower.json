@@ -1,18 +1,19 @@
 {
-  "name": "rootclass",
-  "homepage": "https://github.com/LeftAndRight/RootClassJS",
-  "authors": [
-    "Jonathan Beech <jon@leftandright.co.za>"
-  ],
-  "moduleType": [
-    "amd",
-    "globals",
-    "node"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ]
+	"name": "rootclass",
+	"homepage": "https://github.com/LeftAndRight/rootclass",
+	"authors": [
+		"Jonathan Beech <jon@leftandright.co.za>"
+	],
+	"moduleType": [
+		"amd",
+		"globals",
+		"node"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"test",
+		"src",
+		"Gruntfile.js"
+	]
 }

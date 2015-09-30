@@ -13,9 +13,6 @@
 
 		callSuper : function(superClass, methodName, methodArgs){
 			return superClass.prototype[methodName].apply(this, methodArgs);
-		},
-		callSuperMethod: function(methodName, methodArgs){
-			return this.__super__[methodName].apply(this, methodArgs)
 		}
 	});
 	// Setup extension prototype manipulation
